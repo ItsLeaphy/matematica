@@ -697,52 +697,922 @@ td:first-child { font-family: system-ui; font-weight: 500; color: #1a1a18; }
 </div>
 
 <!-- BLOCO 6 -->
-<div class="section-label">Seção 6</div>
+<div class="section-label">6. Lei dos cossenos</div>
+
+<div class="f accent-amber">
+  <div class="formula">
+    a² = b² + c² − 2bc · cos A
+  </div>
+  <div class="note">
+    Fórmula válida para qualquer triângulo (e análoga para os outros lados)
+  </div>
+</div>
+
+<div class="rule">
+  <span class="dot da"></span>
+  <span><b>Quando usar:</b> 2 lados + ângulo entre eles (SAS) ou 3 lados (SSS)</span>
+</div>
+
+<div class="section-label">Para encontrar ângulo</div>
+
+<div class="f accent-blue">
+  <div class="formula">
+    cos A = (b² + c² − a²) / (2bc)
+  </div>
+</div>
+
+<div class="rule">
+  <span class="dot db"></span>
+  <span><b>Uso:</b> quando você tem os 3 lados e quer descobrir um ângulo</span>
+</div>
+
+<div class="section-label">Conexão com Pitágoras</div>
+
+<div class="f accent-teal">
+  <div class="formula">
+    Se A = 90° → cos 90° = 0<br>
+    então: a² = b² + c²
+  </div>
+  <div class="note">
+    Pitágoras é um caso especial da lei dos cossenos
+  </div>
+</div>
+
+<div class="rule">
+  <span class="dot dt"></span>
+  <span><b>Insight:</b> Lei dos cossenos = versão geral do Pitágoras</span>
+</div>
+
+<div class="rule">
+  <span class="dot dc"></span>
+  <span><b>Cuidado:</b> se o ângulo for obtuso, o cosseno é negativo (mas a fórmula já resolve isso)</span>
+</div>
+
+<div class="section-label">Exemplo resolvido</div>
+
+<div class="f accent-purple">
+  <div class="formula">
+    b = 5, c = 7, A = 120° → achar a
+  </div>
+</div>
+
+<div class="rule">
+  <span class="dot dt"></span>
+  <span>a² = 5² + 7² − 2(5)(7) · cos 120°</span>
+</div>
+
+<div class="rule">
+  <span class="dot dt"></span>
+  <span>a² = 25 + 49 − 70 · (−1/2)</span>
+</div>
+
+<div class="rule">
+  <span class="dot dt"></span>
+  <span>a² = 74 + 35 = 109</span>
+</div>
+
+<div class="rule">
+  <span class="dot dp"></span>
+  <span><b>a = √109</b></span>
+</div>
+
+<!-- QUESTÕES -->
+<div class="section-label">Questões — nível prova</div>
+
 <div class="grid">
-  <div class="f accent-blue"><div class="formula placeholder">[conteúdo]</div></div>
-  <div class="f accent-blue"><div class="formula placeholder">[conteúdo]</div></div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 1</div>
+    <div class="formula">
+      Calcule:<br>
+      b = 3, c = 4, A = 90°<br>
+      Encontre a.
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 2</div>
+    <div class="formula">
+      Calcule:<br>
+      b = 6, c = 8, A = 60°<br>
+      Encontre a.
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 3</div>
+    <div class="formula">
+      Em um triângulo com lados:<br>
+      a = 7, b = 5, c = 6<br>
+      Calcule o ângulo A.
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 4</div>
+    <div class="formula">
+      Calcule:<br>
+      b = 10, c = 7, A = 120°<br>
+      Encontre a.
+    </div>
+  </div>
+
+</div>
+
+<div class="rule">
+  <span class="dot db"></span>
+  <span><b>Erro clássico:</b> esquecer o sinal do cosseno (principalmente em ângulos obtusos)</span>
 </div>
 
 <!-- BLOCO 7 -->
-<div class="section-label">Seção 7</div>
-<div class="f accent-amber">
-  <div class="formula placeholder">[conteúdo]</div>
-  <div class="note">[explicação]</div>
+<div class="section-label">Capítulo 2 — Conceitos trigonométricos básicos</div>
+
+<div class="section-label">7. Arcos e ângulos — conceitos fundamentais</div>
+
+<div class="grid">
+
+  <div class="f accent-purple">
+    <div class="name">Arco geométrico</div>
+    <div class="formula">
+      Parte da circunferência entre dois pontos
+    </div>
+  </div>
+
+  <div class="f accent-purple">
+    <div class="name">Medida angular</div>
+    <div class="formula">
+      Pode ser em graus ou radianos
+    </div>
+  </div>
+
+</div>
+
+<div class="rule">
+  <span class="dot dp"></span>
+  <span><b>Importante:</b> medida angular ≠ comprimento do arco</span>
+</div>
+
+<div class="rule">
+  <span class="dot dt"></span>
+  <span><b>Comprimento:</b> depende do raio da circunferência</span>
+</div>
+
+<div class="rule">
+  <span class="dot dc"></span>
+  <span><b>Ângulo:</b> é uma medida “pura”, independe do tamanho da circunferência</span>
+</div>
+
+<div class="section-label">Ângulo central</div>
+
+<div class="f accent-teal">
+  <div class="formula">
+    O ângulo central tem a mesma medida do arco que ele subtende
+  </div>
+  <div class="note">
+    (mesma medida angular, não necessariamente mesmo comprimento)
+  </div>
+</div>
+
+<div class="rule">
+  <span class="dot db"></span>
+  <span><b>Visualização:</b> abrir o ângulo é como “puxar” o arco junto com ele</span>
+</div>
+
+<div class="rule">
+  <span class="dot da"></span>
+  <span><b>Erro comum:</b> achar que arco maior sempre significa ângulo maior — depende do raio</span>
+</div>
+
+<!-- QUESTÕES -->
+<div class="section-label">Questões — entendimento real</div>
+
+<div class="grid">
+
+  <div class="f accent-amber">
+    <div class="name">Nível 1</div>
+    <div class="formula">
+      O que é um arco geométrico?<br>
+      (responda com suas palavras)
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 2</div>
+    <div class="formula">
+      Dois círculos têm raios diferentes,<br>
+      mas o mesmo ângulo central.<br>
+      Os arcos têm o mesmo comprimento?
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 3</div>
+    <div class="formula">
+      Se aumentarmos o raio mantendo o mesmo ângulo,<br>
+      o que acontece com o comprimento do arco?
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 4</div>
+    <div class="formula">
+      Um arco e seu ângulo central sempre têm<br>
+      o mesmo valor numérico?<br>
+      Explique.
+    </div>
+  </div>
+
+</div>
+
+<div class="rule">
+  <span class="dot db"></span>
+  <span><b>Regra mental:</b> ângulo mede abertura · arco mede comprimento</span>
 </div>
 
 <!-- BLOCO 8 -->
-<div class="section-label">Seção 8</div>
+<div class="section-label">8. Unidades de medida — graus e radianos</div>
+
+<div class="grid">
+
+  <div class="f accent-purple">
+    <div class="name">Grau</div>
+    <div class="formula">
+      1° = 1/360 da circunferência
+    </div>
+  </div>
+
+  <div class="f accent-purple">
+    <div class="name">Radiano</div>
+    <div class="formula">
+      1 rad = arco de comprimento igual ao raio
+    </div>
+    <div class="note">
+      “esticando” o arco → tamanho = raio
+    </div>
+  </div>
+
+</div>
+
+<div class="rule">
+  <span class="dot dp"></span>
+  <span><b>Diferença chave:</b> grau divide a volta · radiano mede diretamente o arco</span>
+</div>
+
+<div class="section-label">Relação fundamental</div>
+
+<div class="f accent-blue">
+  <div class="formula">
+    180° = π rad
+  </div>
+</div>
+
+<div class="rule">
+  <span class="dot db"></span>
+  <span><b>Toda conversão nasce daqui</b></span>
+</div>
+
+<div class="section-label">Comprimento de arco</div>
+
+<div class="f accent-teal">
+  <div class="formula">
+    ℓ = α · r
+  </div>
+  <div class="note">
+    α deve estar em radianos
+  </div>
+</div>
+
+<div class="rule">
+  <span class="dot dt"></span>
+  <span><b>Tradução:</b> comprimento = ângulo × raio</span>
+</div>
+
+<div class="rule">
+  <span class="dot dc"></span>
+  <span><b>Erro comum:</b> usar grau na fórmula (sempre converta antes)</span>
+</div>
+
+<div class="rule">
+  <span class="dot da"></span>
+  <span><b>Insight forte:</b> radiano conecta ângulo diretamente com comprimento</span>
+</div>
+
+<!-- QUESTÕES -->
+<div class="section-label">Questões — base conceitual</div>
+
+<div class="grid">
+
+  <div class="f accent-amber">
+    <div class="name">Nível 1</div>
+    <div class="formula">
+      O que significa 1 radiano?<br>
+      (explique com suas palavras)
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 2</div>
+    <div class="formula">
+      Qual é a relação entre graus e radianos?
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 3</div>
+    <div class="formula">
+      Um arco tem α = 2 rad e r = 5.<br>
+      Calcule o comprimento ℓ.
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 4</div>
+    <div class="formula">
+      Se ℓ = 10 e r = 5,<br>
+      determine o ângulo em radianos.
+    </div>
+  </div>
+
+</div>
+
+<div class="rule">
+  <span class="dot db"></span>
+  <span><b>Regra mental:</b> grau é divisão artificial · radiano é medida real</span>
+</div>
+
+<!-- BLOCO 9 -->
+<div class="section-label">9. Conversão graus ↔ radianos</div>
+
+<div class="section-label">Regra geral</div>
+
+<div class="grid">
+
+  <div class="f accent-purple">
+    <div class="name">Grau → radiano</div>
+    <div class="formula">
+      × (π / 180)
+    </div>
+  </div>
+
+  <div class="f accent-purple">
+    <div class="name">Radiano → grau</div>
+    <div class="formula">
+      × (180 / π)
+    </div>
+  </div>
+
+</div>
+
+<div class="rule">
+  <span class="dot dp"></span>
+  <span><b>Base de tudo:</b> 180° = π rad</span>
+</div>
+
+<div class="section-label">Conversões simples (decorar)</div>
+
 <table>
-<thead><tr><th>X</th><th>Y</th></tr></thead>
+<thead>
+<tr>
+<th>30°</th><th>45°</th><th>60°</th><th>90°</th>
+<th>120°</th><th>150°</th><th>180°</th><th>270°</th><th>360°</th>
+</tr>
+</thead>
 <tbody>
-<tr><td>[ ]</td><td>[ ]</td></tr>
-<tr><td>[ ]</td><td>[ ]</td></tr>
+<tr>
+<td>π/6</td><td>π/4</td><td>π/3</td><td>π/2</td>
+<td>2π/3</td><td>5π/6</td><td>π</td><td>3π/2</td><td>2π</td>
+</tr>
 </tbody>
 </table>
 
-<!-- BLOCO 9 -->
-<div class="section-label">Seção 9</div>
+<div class="section-label">Conversões complexas</div>
+
+<div class="f accent-blue">
+  <div class="formula">
+    kπ/n = k × 180° / n
+  </div>
+  <div class="note">
+    Substitua π por 180° e simplifique
+  </div>
+</div>
+
+<div class="section-label">Exemplos</div>
+
 <div class="grid">
-  <div class="f accent-purple"><div class="formula placeholder">[conteúdo]</div></div>
-  <div class="f accent-purple"><div class="formula placeholder">[conteúdo]</div></div>
+
+  <div class="f accent-teal">
+    <div class="formula">
+      17π/6 → 17 × 180 / 6 = 510°
+    </div>
+    <div class="note">
+      = 360° + 150°
+    </div>
+  </div>
+
+  <div class="f accent-teal">
+    <div class="formula">
+      51π/10 → 51 × 180 / 10 = 918°
+    </div>
+    <div class="note">
+      = 2 voltas + 198°
+    </div>
+  </div>
+
+  <div class="f accent-teal">
+    <div class="formula">
+      7π/4 → 7 × 180 / 4 = 315°
+    </div>
+  </div>
+
+  <div class="f accent-teal">
+    <div class="formula">
+      210° → 210 / 180 = 7/6 → 7π/6
+    </div>
+  </div>
+
+</div>
+
+<div class="rule">
+  <span class="dot dt"></span>
+  <span><b>Método:</b> divide por 180 e simplifica, depois multiplica por π</span>
+</div>
+
+<div class="rule">
+  <span class="dot db"></span>
+  <span><b>Dica de cálculo:</b> tenta dividir 180 primeiro — muitas contas ficam inteiras</span>
+</div>
+
+<div class="rule">
+  <span class="dot dc"></span>
+  <span><b>Erro clássico:</b> esquecer de simplificar fração</span>
+</div>
+
+<!-- QUESTÕES -->
+<div class="section-label">Questões — domínio total</div>
+
+<div class="grid">
+
+  <div class="f accent-amber">
+    <div class="name">Nível 1</div>
+    <div class="formula">
+      Converta:<br>
+      a) 30°<br>
+      b) 90°<br>
+      c) 180°
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 2</div>
+    <div class="formula">
+      Converta:<br>
+      a) π/3<br>
+      b) 3π/2<br>
+      c) 5π/6
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 3</div>
+    <div class="formula">
+      Converta:<br>
+      a) 7π/6<br>
+      b) 11π/4
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 4</div>
+    <div class="formula">
+      Converta:<br>
+      a) 210°<br>
+      b) 315°<br>
+      c) 540°
+    </div>
+  </div>
+
+</div>
+
+<div class="rule">
+  <span class="dot da"></span>
+  <span><b>Regra mental:</b> π ↔ 180° (se isso estiver automático, você resolve qualquer conversão)</span>
 </div>
 
 <!-- BLOCO 10 -->
-<div class="section-label">Seção 10</div>
-<div class="rule"><span class="dot dt"></span><span class="placeholder">[dica]</span></div>
+<div class="section-label">10. Circunferência orientada e trigonométrica</div>
+
+<div class="grid">
+
+  <div class="f accent-purple">
+    <div class="name">Circunferência orientada</div>
+    <div class="formula">
+      Circunferência com sentido definido de percurso
+    </div>
+  </div>
+
+  <div class="f accent-purple">
+    <div class="name">Circunferência trigonométrica</div>
+    <div class="formula">
+      Raio = 1 · centro (0,0)<br>
+      ponto inicial A = (1,0)
+    </div>
+    <div class="note">
+      Sentido positivo: anti-horário
+    </div>
+  </div>
+
+</div>
+
+<div class="rule">
+  <span class="dot dt"></span>
+  <span><b>Sentido positivo (+):</b> anti-horário</span>
+</div>
+
+<div class="rule">
+  <span class="dot dc"></span>
+  <span><b>Sentido negativo (−):</b> horário</span>
+</div>
+
+<div class="rule">
+  <span class="dot db"></span>
+  <span><b>Ponto inicial:</b> (1,0) → todos os ângulos partem daqui</span>
+</div>
+
+<div class="section-label">Quadrantes</div>
+
+<table>
+<thead>
+<tr>
+<th>Quad</th>
+<th>Intervalo (graus)</th>
+<th>Intervalo (rad)</th>
+<th>Sen</th>
+<th>Cos</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1º</td>
+<td>0° a 90°</td>
+<td>0 a π/2</td>
+<td>+</td>
+<td>+</td>
+</tr>
+
+<tr>
+<td>2º</td>
+<td>90° a 180°</td>
+<td>π/2 a π</td>
+<td>+</td>
+<td>−</td>
+</tr>
+
+<tr>
+<td>3º</td>
+<td>180° a 270°</td>
+<td>π a 3π/2</td>
+<td>−</td>
+<td>−</td>
+</tr>
+
+<tr>
+<td>4º</td>
+<td>270° a 360°</td>
+<td>3π/2 a 2π</td>
+<td>−</td>
+<td>+</td>
+</tr>
+
+</tbody>
+</table>
+
+<div class="rule">
+  <span class="dot dp"></span>
+  <span><b>Padrão dos sinais:</b> (+,+) → (+,−) → (−,−) → (−,+)</span>
+</div>
+
+<div class="rule">
+  <span class="dot da"></span>
+  <span><b>Erro clássico:</b> esquecer em qual quadrante está o ângulo</span>
+</div>
+
+<div class="rule">
+  <span class="dot db"></span>
+  <span><b>Insight:</b> seno = eixo y · cosseno = eixo x</span>
+</div>
+
+<!-- QUESTÕES -->
+<div class="section-label">Questões — visualização</div>
+
+<div class="grid">
+
+  <div class="f accent-amber">
+    <div class="name">Nível 1</div>
+    <div class="formula">
+      Qual o sinal de:<br>
+      a) sen 120°<br>
+      b) cos 120°<br>
+      c) sen 300°
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 2</div>
+    <div class="formula">
+      Em qual quadrante está:<br>
+      a) 150°<br>
+      b) 210°<br>
+      c) 330°
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 3</div>
+    <div class="formula">
+      Determine o sinal de:<br>
+      a) cos 240°<br>
+      b) sen 210°
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 4</div>
+    <div class="formula">
+      Um ângulo tem seno negativo<br>
+      e cosseno positivo.<br>
+      Em qual quadrante ele está?
+    </div>
+  </div>
+
+</div>
+
+<div class="rule">
+  <span class="dot db"></span>
+  <span><b>Regra mental:</b> seno = vertical · cosseno = horizontal</span>
+</div>
 
 <!-- BLOCO 11 -->
-<div class="section-label">Seção 11</div>
-<div class="grid3">
-  <div class="f accent-teal"><div class="formula placeholder">[conteúdo]</div></div>
-  <div class="f accent-teal"><div class="formula placeholder">[conteúdo]</div></div>
-  <div class="f accent-teal"><div class="formula placeholder">[conteúdo]</div></div>
+<div class="section-label">11. Arcos côngruos (congruentes)</div>
+
+<div class="f accent-purple">
+  <div class="formula">
+    Dois arcos são côngruos quando terminam no mesmo ponto da circunferência
+  </div>
+  <div class="note">
+    Podem dar voltas diferentes, mas chegam no mesmo lugar
+  </div>
+</div>
+
+<div class="rule">
+  <span class="dot dp"></span>
+  <span><b>Ideia central:</b> diferença entre eles é múltiplo de uma volta completa</span>
+</div>
+
+<div class="section-label">Expressões gerais</div>
+
+<div class="grid">
+
+  <div class="f accent-blue">
+    <div class="name">Graus</div>
+    <div class="formula">
+      α + k · 360°
+    </div>
+  </div>
+
+  <div class="f accent-blue">
+    <div class="name">Radianos</div>
+    <div class="formula">
+      x + 2kπ
+    </div>
+  </div>
+
+</div>
+
+<div class="rule">
+  <span class="dot db"></span>
+  <span>k ∈ ℤ (inteiros positivos, negativos ou zero)</span>
+</div>
+
+<div class="rule">
+  <span class="dot dt"></span>
+  <span><b>k positivo:</b> voltas extras no sentido anti-horário</span>
+</div>
+
+<div class="rule">
+  <span class="dot dc"></span>
+  <span><b>k negativo:</b> voltas no sentido horário</span>
+</div>
+
+<div class="section-label">Exemplos</div>
+
+<div class="grid">
+
+  <div class="f accent-teal">
+    <div class="formula">
+      Côngruos a 45°:<br>
+      … −315°, 45°, 405°, 765° …
+    </div>
+  </div>
+
+  <div class="f accent-teal">
+    <div class="formula">
+      Côngruos a π/3:<br>
+      … π/3 − 2π, π/3, π/3 + 2π …
+    </div>
+  </div>
+
+</div>
+
+<div class="rule">
+  <span class="dot da"></span>
+  <span><b>Erro clássico:</b> achar que ângulos diferentes sempre dão valores diferentes de seno/cosseno</span>
+</div>
+
+<div class="rule">
+  <span class="dot db"></span>
+  <span><b>Insight forte:</b> arcos côngruos têm o mesmo seno e cosseno</span>
+</div>
+
+<!-- QUESTÕES -->
+<div class="section-label">Questões — raciocínio</div>
+
+<div class="grid">
+
+  <div class="f accent-amber">
+    <div class="name">Nível 1</div>
+    <div class="formula">
+      Escreva 3 arcos côngruos a 60°
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 2</div>
+    <div class="formula">
+      Escreva 2 arcos côngruos a π/2
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 3</div>
+    <div class="formula">
+      405° é côngruo a qual ângulo entre 0° e 360°?
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 4</div>
+    <div class="formula">
+      Determine se 7π/3 é côngruo a π/3
+    </div>
+  </div>
+
+</div>
+
+<div class="rule">
+  <span class="dot db"></span>
+  <span><b>Regra mental:</b> se a diferença for múltiplo de 360° (ou 2π), são côngruos</span>
 </div>
 
 <!-- BLOCO 12 -->
-<div class="section-label">Seção 12</div>
-<div class="f accent-coral">
-  <div class="formula placeholder">[conteúdo final]</div>
+<div class="section-label">12. Primeira determinação positiva</div>
+
+<div class="f accent-purple">
+  <div class="formula">
+    Menor arco não-negativo côngruo ao arco dado
+  </div>
+  <div class="note">
+    Equivalente a “reduzir para a primeira volta”
+  </div>
+</div>
+
+<div class="rule">
+  <span class="dot dp"></span>
+  <span><b>Intervalo final:</b> [0°, 360°)</span>
+</div>
+
+<div class="section-label">Como calcular</div>
+
+<div class="grid">
+
+  <div class="f accent-blue">
+    <div class="formula">
+      Divide por 360° e pega o resto
+    </div>
+  </div>
+
+  <div class="f accent-blue">
+    <div class="formula">
+      Ou soma/subtrai 360° até entrar no intervalo
+    </div>
+  </div>
+
+</div>
+
+<div class="section-label">Exemplos</div>
+
+<div class="grid">
+
+  <div class="f accent-teal">
+    <div class="formula">
+      780° → 780 ÷ 360 = 2 (resto 60)<br>
+      → 60°
+    </div>
+  </div>
+
+  <div class="f accent-teal">
+    <div class="formula">
+      1140° → resto 60°<br>
+      → 60°
+    </div>
+  </div>
+
+  <div class="f accent-teal">
+    <div class="formula">
+      −400° → −400 + 360 = −40<br>
+      −40 + 360 = 320°<br>
+      → 320°
+    </div>
+  </div>
+
+  <div class="f accent-teal">
+    <div class="formula">
+      15π/2 → divide por 2π<br>
+      15/4 = 3 resto 3π/2<br>
+      → 3π/2
+    </div>
+    <div class="note">
+      (= 270°)
+    </div>
+  </div>
+
+</div>
+
+<div class="rule">
+  <span class="dot dt"></span>
+  <span><b>Para radianos:</b> use 2π em vez de 360°</span>
+</div>
+
+<div class="rule">
+  <span class="dot db"></span>
+  <span><b>Objetivo:</b> sempre trazer o ângulo para uma volta só</span>
+</div>
+
+<div class="rule">
+  <span class="dot dc"></span>
+  <span><b>Erro clássico:</b> parar antes de entrar no intervalo correto</span>
+</div>
+
+<div class="rule">
+  <span class="dot da"></span>
+  <span><b>Dica:</b> se for negativo, continue somando 360° até ficar positivo</span>
+</div>
+
+<!-- QUESTÕES -->
+<div class="section-label">Questões — domínio completo</div>
+
+<div class="grid">
+
+  <div class="f accent-amber">
+    <div class="name">Nível 1</div>
+    <div class="formula">
+      Determine:<br>
+      a) 420°<br>
+      b) 725°
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 2</div>
+    <div class="formula">
+      Determine:<br>
+      a) −50°<br>
+      b) −370°
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 3</div>
+    <div class="formula">
+      Determine:<br>
+      a) 13π/2<br>
+      b) 9π/3
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 4</div>
+    <div class="formula">
+      Determine a primeira determinação positiva de:<br>
+      1980°
+    </div>
+  </div>
+
+</div>
+
+<div class="rule">
+  <span class="dot db"></span>
+  <span><b>Regra mental:</b> tira voltas completas até sobrar só o necessário</span>
 </div>
 
 </body>
