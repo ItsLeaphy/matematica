@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Template — Trigonometria Modular</title>
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; background: #f5f4f0; color: #1a1a18; padding: 1.5rem; }
+h1 { font-size: 16px; font-weight: 500; color: #888; margin-bottom: 1.5rem; letter-spacing: .04em; }
+
+.section-label {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: #1a1a18;
+  margin: 1.8rem 0 .8rem;
+  border-left: 4px solid #534AB7;
+  padding-left: 8px;
+}
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+
+.f { background: #fff; border: 0.5px solid #ddd; border-radius: 10px; padding: .85rem 1rem; }
+.f .name { font-size: 10px; color: #aaa; margin-bottom: .3rem; }
+.f .formula { font-size: 15px; font-weight: 600; font-family: 'Courier New', monospace; line-height: 1.4; }
+.f .note { font-size: 11px; color: #999; margin-top: .3rem; }
+
+.accent-purple { border-left: 3px solid #534AB7; }
+.accent-teal   { border-left: 3px solid #0F6E56; }
+.accent-coral  { border-left: 3px solid #993C1D; }
+.accent-blue   { border-left: 3px solid #185FA5; }
+.accent-amber  { border-left: 3px solid #854F0B; }
+
+table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 4px 0; }
+th { background: #f0efe9; padding: 7px 10px; font-weight: 500; border: 0.5px solid #ddd; text-align: center; }
+td { padding: 7px 10px; border: 0.5px solid #ddd; text-align: center; color: #555; font-family: monospace; }
+td:first-child { font-family: system-ui; font-weight: 500; color: #1a1a18; }
+
+.rule {
+  background: #f5f4f0;
+  border-radius: 8px;
+  padding: .55rem .9rem;
+  font-size: 12px;
+  color: #666;
+  margin: 5px 0;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; margin-top: 4px; }
+.dp { background: #534AB7; }
+.dt { background: #0F6E56; }
+.dc { background: #993C1D; }
+.db { background: #185FA5; }
+.da { background: #854F0B; }
+
+.placeholder {
+  font-size: 12px;
+  color: #bbb;
+  font-style: italic;
+}
+
+@media (max-width: 480px) {
+  .grid, .grid3 { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+
+<body>
+
+<h1>Template Modular — Trigonometria</h1>
+
+<!-- BLOCO 1 -->
+<div class="section-label">Capítulo 1 — Trigonometria: resolução de triângulos</div>
+
+<div class="f accent-purple">
+  <div class="name">1. Triângulo retângulo — razões trigonométricas</div>
+  <div class="formula">
+    sen α = op / hip<br>
+    cos α = adj / hip<br>
+    tan α = op / adj = sen α / cos α
+  </div>
+  <div class="note">
+    op = cateto oposto · adj = cateto adjacente · hip = hipotenusa
+  </div>
+</div>
+
+<div class="rule">
+  <span class="dot dp"></span>
+  <span><b>Identidade fundamental:</b> sen²α + cos²α = 1 (vale para qualquer ângulo)</span>
+</div>
+
+<div class="rule">
+  <span class="dot dp"></span>
+  <span><b>Ideia chave:</b> seno mede “altura relativa”, cosseno mede “base relativa”</span>
+</div>
+
+<div class="section-label">Ângulos notáveis</div>
+
+<table>
+<thead><tr><th>Ângulo</th><th>Sen</th><th>Cos</th><th>Tan</th></tr></thead>
+<tbody>
+<tr><td>30°</td><td>1/2</td><td>√3/2</td><td>√3/3</td></tr>
+<tr><td>45°</td><td>√2/2</td><td>√2/2</td><td>1</td></tr>
+<tr><td>60°</td><td>√3/2</td><td>1/2</td><td>√3</td></tr>
+<tr><td>90°</td><td>1</td><td>0</td><td>—</td></tr>
+</tbody>
+</table>
+
+<div class="rule">
+  <span class="dot dt"></span>
+  <span><b>Macete do seno:</b> 1/2 → √2/2 → √3/2 → 1</span>
+</div>
+
+<div class="rule">
+  <span class="dot dc"></span>
+  <span><b>Cosseno:</b> faz o caminho inverso</span>
+</div>
+
+<div class="rule">
+  <span class="dot db"></span>
+  <span><b>Insight ninja:</b> tan α = sen α / cos α → se souber seno e cosseno, você já sabe tangente</span>
+</div>
+
+<!-- QUESTÕES -->
+<div class="section-label">Questões — pratique até virar reflexo</div>
+
+<div class="grid">
+
+  <div class="f accent-amber">
+    <div class="name">Nível 1</div>
+    <div class="formula">
+      Calcule:<br>
+      a) sen 30°<br>
+      b) cos 60°<br>
+      c) tan 45°
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 2</div>
+    <div class="formula">
+      Se sen α = 1/2, determine α (ângulo agudo).
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 3</div>
+    <div class="formula">
+      Num triângulo retângulo:<br>
+      hip = 10 e op = 5<br>
+      Calcule sen α, cos α e tan α.
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 4</div>
+    <div class="formula">
+      Sabendo que cos α = √3/2,<br>
+      encontre sen α usando a identidade fundamental.
+    </div>
+  </div>
+
+</div>
+
+<div class="rule">
+  <span class="dot da"></span>
+  <span><b>Dica de prova:</b> se você travar, volte para o triângulo — desenhar resolve metade dos problemas</span>
+</div>
+
+<!-- BLOCO 2 -->
+<div class="section-label">2. Ângulos complementares e suplementares</div>
+
+<div class="grid">
+
+  <div class="f accent-teal">
+    <div class="name">Complementares (somam 90°)</div>
+    <div class="formula">
+      α + β = 90°<br><br>
+      sen α = cos β<br>
+      cos α = sen β
+    </div>
+    <div class="note">
+      Ex: sen 30° = cos 60° = 1/2
+    </div>
+  </div>
+
+  <div class="f accent-coral">
+    <div class="name">Suplementares (somam 180°)</div>
+    <div class="formula">
+      α + β = 180°<br><br>
+      sen α = sen β<br>
+      cos α = −cos β
+    </div>
+    <div class="note">
+      Ex: sen 30° = sen 150°<br>
+      cos 30° = −cos 150°
+    </div>
+  </div>
+
+</div>
+
+<div class="rule">
+  <span class="dot dt"></span>
+  <span><b>Leitura rápida:</b> complemento troca seno ↔ cosseno</span>
+</div>
+
+<div class="rule">
+  <span class="dot dc"></span>
+  <span><b>Suplementar:</b> seno repete · cosseno inverte o sinal</span>
+</div>
+
+<div class="rule">
+  <span class="dot db"></span>
+  <span><b>Insight forte:</b> isso funciona porque os ângulos estão “espelhados” no círculo trigonométrico</span>
+</div>
+
+<div class="rule">
+  <span class="dot dp"></span>
+  <span><b>Dica de prova:</b> sempre que ver ângulo estranho (tipo 150°, 120°, 135°), tenta transformar em 30°, 60°, 45°</span>
+</div>
+
+<!-- QUESTÕES -->
+<div class="section-label">Questões — reconhecimento e agilidade</div>
+
+<div class="grid">
+
+  <div class="f accent-amber">
+    <div class="name">Nível 1</div>
+    <div class="formula">
+      Complete:<br>
+      a) sen 20° = cos ____<br>
+      b) cos 70° = sen ____<br>
+      c) sen 40° = cos ____
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 2</div>
+    <div class="formula">
+      Calcule:<br>
+      a) sen 150°<br>
+      b) cos 120°<br>
+      c) sen 180° − 30°
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 3</div>
+    <div class="formula">
+      Simplifique:<br>
+      a) sen 30° + sen 150°<br>
+      b) cos 60° + cos 120°
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 4</div>
+    <div class="formula">
+      Calcule:<br>
+      sen 20° − sen 160° + cos 40° + cos 140°
+    </div>
+  </div>
+
+</div>
+
+<div class="rule">
+  <span class="dot da"></span>
+  <span><b>Regra de ouro:</b> antes de calcular qualquer coisa, tenta transformar os ângulos — quem transforma resolve mais rápido</span>
+</div>
+
+<!-- BLOCO 3 -->
+<div class="section-label">3. Ângulos obtusos (90° < α < 180°)</div>
+
+<div class="grid">
+
+  <div class="f accent-teal">
+    <div class="name">Regra do seno</div>
+    <div class="formula">
+      sen α = sen(180° − α)
+    </div>
+    <div class="note">
+      Seno mantém o valor
+    </div>
+  </div>
+
+  <div class="f accent-coral">
+    <div class="name">Regra do cosseno</div>
+    <div class="formula">
+      cos α = −cos(180° − α)
+    </div>
+    <div class="note">
+      Cosseno troca o sinal
+    </div>
+  </div>
+
+</div>
+
+<div class="rule">
+  <span class="dot dt"></span>
+  <span><b>Seno:</b> sempre positivo no 2º quadrante</span>
+</div>
+
+<div class="rule">
+  <span class="dot dc"></span>
+  <span><b>Cosseno:</b> sempre negativo no 2º quadrante</span>
+</div>
+
+<div class="rule">
+  <span class="dot db"></span>
+  <span><b>Tradução prática:</b> transforma qualquer ângulo obtuso em um ângulo agudo equivalente</span>
+</div>
+
+<div class="section-label">Exemplos clássicos</div>
+
+<div class="grid3">
+
+  <div class="f accent-purple">
+    <div class="formula">
+      sen 120° = sen 60° = √3/2
+    </div>
+  </div>
+
+  <div class="f accent-purple">
+    <div class="formula">
+      cos 120° = −cos 60° = −1/2
+    </div>
+  </div>
+
+  <div class="f accent-purple">
+    <div class="formula">
+      sen 150° = sen 30° = 1/2
+    </div>
+  </div>
+
+  <div class="f accent-purple">
+    <div class="formula">
+      cos 150° = −cos 30° = −√3/2
+    </div>
+  </div>
+
+  <div class="f accent-purple">
+    <div class="formula">
+      sen 135° = sen 45° = √2/2
+    </div>
+  </div>
+
+  <div class="f accent-purple">
+    <div class="formula">
+      cos 135° = −cos 45° = −√2/2
+    </div>
+  </div>
+
+</div>
+
+<div class="section-label">Casos especiais</div>
+
+<div class="grid">
+
+  <div class="f accent-blue">
+    <div class="formula">
+      sen 90° = 1<br>
+      cos 90° = 0
+    </div>
+  </div>
+
+  <div class="f accent-blue">
+    <div class="formula">
+      sen 180° = 0<br>
+      cos 180° = −1
+    </div>
+  </div>
+
+</div>
+
+<!-- QUESTÕES -->
+<div class="section-label">Questões — domínio de sinal</div>
+
+<div class="grid">
+
+  <div class="f accent-amber">
+    <div class="name">Nível 1</div>
+    <div class="formula">
+      Calcule:<br>
+      a) sen 120°<br>
+      b) cos 150°<br>
+      c) sen 135°
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 2</div>
+    <div class="formula">
+      Transforme em ângulo agudo:<br>
+      a) sen 140°<br>
+      b) cos 130°
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 3</div>
+    <div class="formula">
+      Calcule:<br>
+      a) sen 120° + sen 60°<br>
+      b) cos 120° + cos 60°
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 4</div>
+    <div class="formula">
+      Simplifique:<br>
+      sen 150° − sen 30° + cos 135° + cos 45°
+    </div>
+  </div>
+
+</div>
+
+<div class="rule">
+  <span class="dot da"></span>
+  <span><b>Erro clássico:</b> esquecer o sinal do cosseno — isso sozinho derruba questão fácil</span>
+</div>
+
+<!-- BLOCO 4 -->
+<div class="section-label">4. Simplificação de expressões</div>
+
+<div class="f accent-purple">
+  <div class="formula">
+    Estratégia: transformar ângulos e cancelar termos
+  </div>
+  <div class="note">
+    Reduza tudo para ângulos notáveis ou use relações para eliminar termos
+  </div>
+</div>
+
+<div class="section-label">Ferramentas disponíveis</div>
+
+<div class="grid">
+
+  <div class="f accent-teal">
+    <div class="formula">
+      α > 90° → sen α = sen(180° − α)
+    </div>
+  </div>
+
+  <div class="f accent-teal">
+    <div class="formula">
+      soma = 90° → sen α = cos β
+    </div>
+  </div>
+
+  <div class="f accent-coral">
+    <div class="formula">
+      soma = 180° → sen mantém · cos troca sinal
+    </div>
+  </div>
+
+</div>
+
+<div class="rule">
+  <span class="dot db"></span>
+  <span><b>Ideia central:</b> não calcule direto — transforme primeiro</span>
+</div>
+
+<div class="section-label">Exemplo guiado</div>
+
+<div class="f accent-blue">
+  <div class="formula">
+    sen 30° + sen 120° − sen 56° + sen 42°
+  </div>
+</div>
+
+<div class="rule">
+  <span class="dot dt"></span>
+  <span>sen 120° = sen 60° = √3/2</span>
+</div>
+
+<div class="rule">
+  <span class="dot dt"></span>
+  <span>sen 56° = cos 34° (não notável)</span>
+</div>
+
+<div class="rule">
+  <span class="dot dt"></span>
+  <span>42° não cancela diretamente → procurar pares</span>
+</div>
+
+<div class="rule">
+  <span class="dot db"></span>
+  <span><b>Conclusão:</b> nem toda expressão simplifica totalmente — foque nos pares possíveis</span>
+</div>
+
+<div class="section-label">Exemplo com cancelamento total</div>
+
+<div class="f accent-blue">
+  <div class="formula">
+    sen 20° − sen 160° + cos 44° + cos 136°
+  </div>
+</div>
+
+<div class="rule">
+  <span class="dot dt"></span>
+  <span>sen 160° = sen 20° → cancela</span>
+</div>
+
+<div class="rule">
+  <span class="dot dc"></span>
+  <span>cos 136° = −cos 44° → cancela</span>
+</div>
+
+<div class="rule">
+  <span class="dot dp"></span>
+  <span><b>Resultado final:</b> 0</span>
+</div>
+
+<div class="rule">
+  <span class="dot da"></span>
+  <span><b>Regra de ouro:</b> antes de calcular, procure cancelamentos — quase sempre existem</span>
+</div>
+
+<!-- QUESTÕES -->
+<div class="section-label">Questões — padrão de prova</div>
+
+<div class="grid">
+
+  <div class="f accent-amber">
+    <div class="name">Nível 1</div>
+    <div class="formula">
+      Calcule:<br>
+      a) sen 30° + sen 150°<br>
+      b) cos 60° + cos 120°
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 2</div>
+    <div class="formula">
+      Simplifique:<br>
+      a) sen 20° − sen 160°<br>
+      b) cos 70° + cos 110°
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 3</div>
+    <div class="formula">
+      Calcule:<br>
+      sen 45° + sen 135° − cos 45° − cos 135°
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 4</div>
+    <div class="formula">
+      Simplifique:<br>
+      sen 30° + sen 120° − sen 150° − sen 60°
+    </div>
+  </div>
+
+</div>
+
+<div class="rule">
+  <span class="dot db"></span>
+  <span><b>Erro comum:</b> sair substituindo valores direto sem tentar cancelar antes</span>
+</div>
+
+<!-- BLOCO 5 -->
+<div class="section-label">5. Lei dos senos</div>
+
+<div class="f accent-blue">
+  <div class="formula">
+    a / sen A = b / sen B = c / sen C = 2R
+  </div>
+  <div class="note">
+    lados opostos aos respectivos ângulos · R = raio da circunferência circunscrita
+  </div>
+</div>
+
+<div class="rule">
+  <span class="dot db"></span>
+  <span><b>Quando usar:</b> 2 ângulos + 1 lado (ASA ou AAS)</span>
+</div>
+
+<div class="section-label">Passo a passo</div>
+
+<div class="grid">
+
+  <div class="f accent-teal">
+    <div class="formula">
+      1. C = 180° − A − B
+    </div>
+  </div>
+
+  <div class="f accent-teal">
+    <div class="formula">
+      2. Use lado / seno do ângulo oposto
+    </div>
+  </div>
+
+  <div class="f accent-teal">
+    <div class="formula">
+      3. Monte proporção
+    </div>
+  </div>
+
+  <div class="f accent-teal">
+    <div class="formula">
+      4. Resolva a equação
+    </div>
+  </div>
+
+</div>
+
+<div class="section-label">Exemplo resolvido</div>
+
+<div class="f accent-purple">
+  <div class="formula">
+    A = 45°, B = 30°, a = 8 → achar b
+  </div>
+</div>
+
+<div class="rule">
+  <span class="dot dt"></span>
+  <span>a / sen A = b / sen B</span>
+</div>
+
+<div class="rule">
+  <span class="dot dt"></span>
+  <span>8 / sen 45° = b / sen 30°</span>
+</div>
+
+<div class="rule">
+  <span class="dot dt"></span>
+  <span>8 / (√2/2) = b / (1/2)</span>
+</div>
+
+<div class="rule">
+  <span class="dot dp"></span>
+  <span>8√2 = b / (1/2) → <b>b = 4√2</b></span>
+</div>
+
+<div class="rule">
+  <span class="dot da"></span>
+  <span><b>Dica:</b> dividir por fração = multiplicar pelo inverso</span>
+</div>
+
+<!-- QUESTÕES -->
+<div class="section-label">Questões — estilo prova</div>
+
+<div class="grid">
+
+  <div class="f accent-amber">
+    <div class="name">Nível 1</div>
+    <div class="formula">
+      Em um triângulo:<br>
+      A = 30°, B = 60°, a = 10<br>
+      Calcule b.
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 2</div>
+    <div class="formula">
+      Em um triângulo:<br>
+      A = 45°, B = 45°, a = 6<br>
+      Calcule b.
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 3</div>
+    <div class="formula">
+      Em um triângulo:<br>
+      A = 30°, B = 45°, a = 8<br>
+      Calcule o lado c.
+    </div>
+  </div>
+
+  <div class="f accent-amber">
+    <div class="name">Nível 4</div>
+    <div class="formula">
+      Em um triângulo:<br>
+      A = 60°, B = 45°, b = 10<br>
+      Calcule o lado a.
+    </div>
+  </div>
+
+</div>
+
+<div class="rule">
+  <span class="dot db"></span>
+  <span><b>Erro clássico:</b> usar o seno do ângulo errado (sempre use o ângulo oposto ao lado)</span>
+</div>
+
+<!-- BLOCO 6 -->
+<div class="section-label">Seção 6</div>
+<div class="grid">
+  <div class="f accent-blue"><div class="formula placeholder">[conteúdo]</div></div>
+  <div class="f accent-blue"><div class="formula placeholder">[conteúdo]</div></div>
+</div>
+
+<!-- BLOCO 7 -->
+<div class="section-label">Seção 7</div>
+<div class="f accent-amber">
+  <div class="formula placeholder">[conteúdo]</div>
+  <div class="note">[explicação]</div>
+</div>
+
+<!-- BLOCO 8 -->
+<div class="section-label">Seção 8</div>
+<table>
+<thead><tr><th>X</th><th>Y</th></tr></thead>
+<tbody>
+<tr><td>[ ]</td><td>[ ]</td></tr>
+<tr><td>[ ]</td><td>[ ]</td></tr>
+</tbody>
+</table>
+
+<!-- BLOCO 9 -->
+<div class="section-label">Seção 9</div>
+<div class="grid">
+  <div class="f accent-purple"><div class="formula placeholder">[conteúdo]</div></div>
+  <div class="f accent-purple"><div class="formula placeholder">[conteúdo]</div></div>
+</div>
+
+<!-- BLOCO 10 -->
+<div class="section-label">Seção 10</div>
+<div class="rule"><span class="dot dt"></span><span class="placeholder">[dica]</span></div>
+
+<!-- BLOCO 11 -->
+<div class="section-label">Seção 11</div>
+<div class="grid3">
+  <div class="f accent-teal"><div class="formula placeholder">[conteúdo]</div></div>
+  <div class="f accent-teal"><div class="formula placeholder">[conteúdo]</div></div>
+  <div class="f accent-teal"><div class="formula placeholder">[conteúdo]</div></div>
+</div>
+
+<!-- BLOCO 12 -->
+<div class="section-label">Seção 12</div>
+<div class="f accent-coral">
+  <div class="formula placeholder">[conteúdo final]</div>
+</div>
+
+</body>
+</html>
