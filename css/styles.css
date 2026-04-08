@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #f5f4f0;
+  color: #1a1a18;
+  padding: 1.5rem;
+}
+
+/* TÍTULO PRINCIPAL */
+h1 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #888;
+  margin-bottom: 1.5rem;
+  letter-spacing: .04em;
+}
+
+/* TÍTULOS DE SEÇÃO (você pode ajustar depois) */
+.section-label {
+  font-size: 14px; /* você aumentou isso */
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #444;
+  margin: 1.5rem 0 .6rem;
+}
+
+.section-label:first-of-type {
+  margin-top: 0;
+}
+
+/* GRIDS */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+/* CARD */
+.f {
+  background: #fff;
+  border: 0.5px solid #ddd;
+  border-radius: 10px;
+  padding: .85rem 1rem;
+}
+
+.f .name {
+  font-size: 10px;
+  color: #aaa;
+  margin-bottom: .3rem;
+}
+
+.f .formula {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Courier New', monospace;
+  line-height: 1.4;
+}
+
+.f .note {
+  font-size: 11px;
+  color: #999;
+  margin-top: .3rem;
+}
+
+/* CORES */
+.accent-purple { border-left: 3px solid #534AB7; }
+.accent-teal   { border-left: 3px solid #0F6E56; }
+.accent-coral  { border-left: 3px solid #993C1D; }
+.accent-blue   { border-left: 3px solid #185FA5; }
+.accent-amber  { border-left: 3px solid #854F0B; }
+
+/* TABELAS */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin: 4px 0;
+}
+
+th {
+  background: #f0efe9;
+  padding: 7px 10px;
+  font-weight: 500;
+  border: 0.5px solid #ddd;
+  text-align: center;
+}
+
+td {
+  padding: 7px 10px;
+  border: 0.5px solid #ddd;
+  text-align: center;
+  color: #555;
+  font-family: monospace;
+}
+
+td:first-child {
+  font-family: system-ui;
+  font-weight: 500;
+  color: #1a1a18;
+}
+
+/* REGRAS (barrinhas explicativas) */
+.rule {
+  background: #f5f4f0;
+  border-radius: 8px;
+  padding: .55rem .9rem;
+  font-size: 12px;
+  color: #666;
+  margin: 5px 0;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.dp { background: #534AB7; }
+.dt { background: #0F6E56; }
+.dc { background: #993C1D; }
+.db { background: #185FA5; }
+.da { background: #854F0B; }
+
+/* RESPONSIVO */
+@media (max-width: 480px) {
+  .grid, .grid3 {
+    grid-template-columns: 1fr;
+  }
+}
