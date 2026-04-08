@@ -3,88 +3,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Capítulo 1 — Trigonometria</title>
+  <title>Capítulo 2 — Trigonometria</title>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="../css/styles.css">
+
+  <!-- JS -->
+  <script src="../js/script.js" defer></script>
 </head>
 <body>
 
-    <div id="b7" class="section-label">7. Arcos e ângulos — conceitos fundamentais</div>
+  <h1>Capítulo 2 — Conceitos trigonométricos básicos</h1>
 
-    <div class="grid">
-
-  <!-- CONCEITO -->
-  <div class="f accent-purple">
-    <div class="name">Conceito</div>
+  <div class="f accent-purple" style="margin-bottom: 1rem;">
+    <div class="name">Visão geral</div>
     <div class="formula">
-      Arco geométrico é a parte da circunferência entre dois pontos.
+      Aqui você aprende a base conceitual: arcos, radianos, circunferência e organização dos ângulos.
+    </div>
+  </div>
+
+  <!-- NAVEGAÇÃO -->
+  <div class="section-label">Navegação</div>
+
+  <div class="grid">
+    <a href="../index.html" style="text-decoration:none; color:inherit;">
+      <div class="f accent-blue">
+        <div class="formula">← Voltar ao início</div>
+      </div>
+    </a>
+
+    <a href="../pages/capitulo1.html" style="text-decoration:none; color:inherit;">
+      <div class="f accent-teal">
+        <div class="formula">← Capítulo 1</div>
+      </div>
+    </a>
+  </div>
+
+  <!-- ÍNDICE -->
+  <div class="section-label">Navegação rápida</div>
+
+  <div class="grid">
+    <a href="#b7"><div class="f">7. Arcos e ângulos</div></a>
+    <a href="#b8"><div class="f">8. Graus e radianos</div></a>
+    <a href="#b9"><div class="f">9. Conversão</div></a>
+    <a href="#b10"><div class="f">10. Circunferência</div></a>
+    <a href="#b11"><div class="f">11. Arcos côngruos</div></a>
+    <a href="#b12"><div class="f">12. Determinação positiva</div></a>
+  </div>
+
+  <!-- ================= BLOCO 7 ================= -->
+
+  <div id="b7" class="section-label">7. Arcos e ângulos — conceitos fundamentais</div>
+
+  <div class="grid">
+
+    <div class="f accent-purple">
+      <div class="name">Conceito</div>
+      <div class="formula">
+        Arco geométrico é a parte da circunferência entre dois pontos.
+      </div>
+      <div class="note">
+        A medida angular não depende do tamanho do círculo.
+      </div>
+    </div>
+
+    <div class="f accent-purple">
+      <div class="name">Definições</div>
+      <div class="formula">
+        • Medida angular ≠ comprimento<br>
+        • Comprimento depende do raio<br>
+        • Ângulo central = medida do arco
+      </div>
+    </div>
+
+  </div>
+
+  <div class="f accent-blue" style="margin-top:10px;">
+    <div class="name">Exemplo</div>
+    <div class="formula">
+      Dois círculos com raios diferentes têm arco de 60°.
     </div>
     <div class="note">
-      A medida angular (graus ou radianos) não depende do tamanho da circunferência — apenas da abertura do ângulo.
+      A medida angular é igual, mas o comprimento muda.
     </div>
   </div>
 
-  <!-- DEFINIÇÕES -->
-  <div class="f accent-purple">
-    <div class="name">Definições importantes</div>
-    <div class="formula">
-      • Medida angular ≠ comprimento do arco<br>
-      • Comprimento depende do raio<br>
-      • Ângulo central tem a mesma medida do arco
-    </div>
+  <div class="rule">
+    <span class="dot db"></span>
+    <span>
+      Ângulo mede abertura. Arco mede comprimento. Nunca confunda.
+    </span>
   </div>
 
+  <!-- QUESTÕES -->
+  <div class="section-label">Pratique</div>
+
+  <div class="grid">
+
+    <div class="f accent-amber">
+      <div class="name">Questão 1</div>
+      <div class="formula">
+        Dois arcos iguais têm mesmo comprimento?
+      </div>
+
+      <button onclick="toggle('r1')">Ver resposta</button>
+
+      <div id="r1" style="display:none" class="note">
+        Não. Depende do raio.
+      </div>
     </div>
 
-    <!-- EXEMPLO -->
-    <div class="f accent-blue" style="margin-top:10px;">
-  <div class="name">Exemplo</div>
-  <div class="formula">
-    Dois círculos com raios diferentes possuem um arco de 60°.
-  </div>
-  <div class="note">
-    A medida angular é igual nos dois casos, mas o comprimento do arco será maior no círculo de maior raio.
-  </div>
+    <div class="f accent-amber">
+      <div class="name">Questão 2</div>
+      <div class="formula">
+        O que define o comprimento de um arco?
+      </div>
+
+      <button onclick="toggle('r2')">Ver resposta</button>
+
+      <div id="r2" style="display:none" class="note">
+        Raio + medida angular.
+      </div>
     </div>
 
-    <!-- OBSERVAÇÃO -->
-    <div class="rule">
-  <span class="dot db"></span>
-  <span>
-    Ângulo mede abertura. Arco mede distância. Confundir isso é um dos erros mais comuns em trigonometria.
-  </span>
-    </div>
-
-    <!-- QUESTÕES -->
-    <div class="section-label">Pratique</div>
-
-    <div class="grid">
-
-  <div class="f accent-amber">
-    <div class="name">Questão 1</div>
-    <div class="formula">
-      Dois arcos têm a mesma medida angular. Eles necessariamente têm o mesmo comprimento?
-    </div>
-
-    <button onclick="toggle('r7_1')">Ver resposta</button>
-
-    <div id="r7_1" style="display:none" class="note">
-      Não. O comprimento depende do raio da circunferência.
-    </div>
   </div>
 
-  <div class="f accent-amber">
-    <div class="name">Questão 2</div>
-    <div class="formula">
-      O que define o comprimento de um arco?
-    </div>
+  <!-- ESPAÇO PRA PRÓXIMOS BLOCOS -->
+  <div style="height:40px;"></div>
 
-    <button onclick="toggle('r7_2')">Ver resposta</button>
-
-    <div id="r7_2" style="display:none" class="note">
-      O raio da circunferência e a medida angular (em radianos).
-    </div>
-  </div>
-
-    </div>
 </body>
 </html>
